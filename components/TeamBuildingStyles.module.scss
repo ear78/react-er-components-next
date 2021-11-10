@@ -1,0 +1,135 @@
+#TeamBuilding {
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  background: #f7f7f7;
+  padding-top: 40px;
+  font-family: avenir next, sans-serif;
+}
+
+.TeamBuildingContainer {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-top: 40px;
+  .Member {
+    display: inline-block;
+    margin: 1%;
+    box-sizing: border-box;
+    width: 98%;
+    &:hover  .MemberHoverTrigger {
+      border-color: #e91e63;
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+    .MemberHoverTrigger {
+      position: relative;
+      transition: transform .2s ease 0ms, border-color .2s ease 0ms;
+      border: 1px solid #ebebeb;
+      padding: 20px;
+      border-radius: 3px;
+      box-sizing: border-box;
+      box-shadow: 0 3px 8px rgba(0,0,0,.03);
+      background: #fff;
+      box-shadow: 0 3px 8px rgba(0,0,0,.03);
+    }
+  }
+
+  // Alternate Layout
+  .Member.AltLayout {
+    text-align: center;
+  }
+
+  // Aleternate Layout
+  .Image {
+    width: 100%;
+    filter: grayscale(90%);
+  }
+
+  .Image.AltLayout {
+    width: 55%;
+  }
+
+  .Name {
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  .JobTitle {
+    margin: 0;
+    color: #757575;
+    margin-bottom: 20px;
+    font-size: .9rem;
+  }
+
+  .CompanyLogo {
+    position: absolute;
+    width: 25px;
+    right: 18px;
+    bottom: 16px;
+  }
+
+  .icons {
+    margin: 0;
+    display: flex;
+    a {
+      display: flex;
+      width: inherit;
+      height: inherit;
+      line-height: inherit;
+      color: #454545;
+    }
+    svg {
+      width: 16px;
+      padding-right: 5px;
+      transition: all .2s ease;
+      &:hover {
+        cursor: pointer;
+        color: #e91e63;
+      }
+    }
+  }
+}
+
+.appear {
+  opacity: 0;
+}
+.appear.appearActive {
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+  .enter {
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+.enter.enterActive {
+  opacity: 1;
+}
+.leave {
+  opacity: 1;
+  transition: opacity .5s ease;
+}
+.leave.leaveActive {
+  opacity: 0;
+}
+
+@media(min-width: 480px) {
+  .TeamBuildingContainer {
+    .Member {
+      width: 48%;
+    }
+  }
+}
+@media(min-width: 768px) {
+  .TeamBuildingContainer {
+    .Member {
+      width: 31.33%;
+    }
+  }
+}
+@media(min-width: 1024px) {
+  .TeamBuildingContainer {
+    .Member {
+      width: 23%;
+    }
+  }
+}
