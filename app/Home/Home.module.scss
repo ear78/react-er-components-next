@@ -1,0 +1,75 @@
+@import '../../assets/scss/_variables';
+
+.HomeContainer {
+  line-height: 1.5;
+  box-sizing: border-box;
+
+  &.Dark {
+    .Left {
+      background: $gray-800;
+      border-color: transparent;
+    }
+  }
+
+  .Left {
+    margin: 0 0 1rem;
+    background: $boxBackgroundColor;
+    padding: 20px;
+    border-radius: 3px;
+    border: $border;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 1rem;
+
+    .HomeTitle {
+      font-size: 8rem;
+      line-height: 130px;
+
+      @media (min-width: 768px) {
+        font-size: 10rem;
+      }
+    }
+
+  }
+}
+
+@include breakpoint(lg) {
+  .HomeContainer {
+
+    .Left {
+      min-height: 350px;
+    }
+  }
+}
+
+.HomeSections {
+
+  p {
+    text-align: center;
+    margin: 0 auto 50px;
+    max-width: 800px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.LazyLoad {
+  opacity: 0;
+  transform: translate3d(0, -20px, 0);
+  transition: all 1s ease-in-out;
+  &.Active {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}

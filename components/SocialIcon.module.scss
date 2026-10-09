@@ -1,0 +1,20 @@
+.Links {
+  color: #454545;
+
+  svg {
+    width: 26px;
+    font-size: 26px;
+    transition: all 0.14s ease-out;
+  }
+
+  
+  &:hover svg {
+    color: #000;
+  }
+  
+  &.Dark {
+    &:hover svg{
+      color: var(--secondary-color);
+    }
+  }
+}

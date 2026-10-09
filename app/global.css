@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+@theme {
+  --font-avenir: Avenir, Helvetica, Arial, sans-serif;
+  --default-font-family: var(--font-avenir);
+}
+
+:root {
+  /* Color Palette */
+  --white: #ffffff;
+  --black: #000000;
+
+  --gray-100: #f7f7f7;
+  --gray-200: #ebebeb;
+  --gray-500: #767676;
+  --gray-700: #454545;
+  --gray-800: #1b1b1b;
+  --gray-900: #121212;
+
+  --pink-900: #f73a7b;
+
+  --primary-color: var(--gray-700);
+  --secondary-color: var(--pink-900);
+  --tertiary-color: var(--black);
+
+  --dark-background-color: #121212;
+  --dark-text-color: #f1f1f1;
+
+  --error: #b22222;
+  --success: #228b22;
+
+  /* Typography */
+  --font-family: Avenir next, 'Fira Sans', 'Helvetica Neue', sans-serif;
+  --font-family-code: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+  --font-size-default: 16px;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 700;
+
+  /* UI Styles */
+  --border: 1px solid var(--gray-200);
+  --box-shadow-md: 0 4px 10px rgba(0, 0, 0, .1);
+  --border-radius-md: 8px;
+  --image-blur: blur(8px);
+
+  /* Banner Styles */
+  --banner-bg-color: var(--gray-500);
+
+  /* Button Styles */
+  --button-default-text-color: white;
+  --button-primary-text-color: var(--white);
+  --button-secondary-text-color: var(--white);
+  --button-tertiary-text-color: var(--white);
+
+  --button-default-bg-color: black;
+  --button-primary-bg-color: var(--primary-color);
+  --button-secondary-bg-color: var(--secondary-color);
+  --button-tertiary-bg-color: var(--tertiary-color);
+
+  --button-border-radius: 25px;
+  --button-padding: .875rem 2.5rem;
+} 
