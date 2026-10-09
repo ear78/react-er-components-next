@@ -2,7 +2,7 @@
 import TeamBuilding from '../../components/TeamBuilding'
 import { teamMembers } from '../../assets/js/data'
 
-export default function Page() {
+export default function TeamView() {
   return (
     // <Layout>
       <TeamBuilding data={teamMembers} />

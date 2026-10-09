@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import Banner from '@/components/Banner/Banner';
 import { bannerImgWebp, bannerImgWebpSm } from '../../assets/js/data';
 
-export default function Page() {
+export default function BannerView() {
   const { components, appLoading } = useSelector((state: any) => state.app);
   const { settings } = components[0];
 

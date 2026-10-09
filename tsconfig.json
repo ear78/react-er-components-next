@@ -28,6 +28,7 @@
       "@/components/*": ["./components/*"],
       "@/lib/*": ["./lib/*"],
       "@/assets/*": ["./assets/*"],
+      "@/app/*": ["./app/*"]
     }
   },
   "include": [

@@ -1,5 +1,5 @@
-import Home from "./Home/Home";
+import Home from "@/app/home/Home";
 
-export default function Page() {
+export default function HomeView() {
   return <Home />;
 }

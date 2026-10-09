@@ -10,7 +10,7 @@ export default function Header() {
       <Link href="/" style={linkStyle}>
         Home
       </Link>
-      <Link href="/HoverPods" style={linkStyle}>
+      <Link href="/hover-pods" style={linkStyle}>
         Hover Pods
       </Link>
       <Link href="/banner" style={linkStyle}>
@@ -18,6 +18,12 @@ export default function Header() {
       </Link>
       <Link href="/team" style={linkStyle}>
         Team
+      </Link>
+      <Link href="/dropper" style={linkStyle}>
+        Dropper
+      </Link>
+      <Link href="/eslider" style={linkStyle}>
+        Eslider
       </Link>
     </header>
   );

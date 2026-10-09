@@ -184,6 +184,36 @@ export const podData = [
 //     podText: 'Hover Pod'
 //   },
 // ]
+export const dropperData = [
+  {
+    id: 0,
+    title: "I'm a dropper title...",
+    // icon: 'angle-down',
+    content:
+      "I'm the content that is connected to the dropper... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 1,
+    title: "I'm a dropper title...",
+    // icon: 'angle-down',
+    content:
+      "I'm the content that is connected to the dropper... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 2,
+    title: "I'm a dropper title...",
+    // icon: 'angle-down',
+    content:
+      "I'm the content that is connected to the dropper... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    id: 3,
+    title: "I'm a dropper title...",
+    // icon: 'angle-down',
+    content:
+      "I'm the content that is connected to the dropper... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+];
 
 export const forms = [
   [
@@ -281,14 +311,14 @@ export const forms = [
   ],
 ];
 
-export const  teamMembers = [
+export const teamMembers = [
   {
     image: '/UserMale.svg',
     name: 'Jack Reacher',
     jobTitle: 'Professional Hitman',
     facebook: 'https://www.facebook.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com'
+    linkedin: 'https://www.linkedin.com',
   },
   {
     image: '/femaleUser.svg',
@@ -296,7 +326,7 @@ export const  teamMembers = [
     jobTitle: 'General Manager',
     facebook: 'https://www.facebook.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com'
+    linkedin: 'https://www.linkedin.com',
   },
   {
     image: '/UserMale.svg',
@@ -304,7 +334,7 @@ export const  teamMembers = [
     jobTitle: 'Head of Technology',
     facebook: 'https://www.facebook.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com'
+    linkedin: 'https://www.linkedin.com',
   },
   {
     image: '/femaleUser.svg',
@@ -312,7 +342,7 @@ export const  teamMembers = [
     jobTitle: 'Art Director',
     facebook: 'https://www.facebook.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com'
+    linkedin: 'https://www.linkedin.com',
   },
   {
     image: '/UserMale.svg',
@@ -320,7 +350,7 @@ export const  teamMembers = [
     jobTitle: 'Computerist',
     facebook: 'https://www.facebook.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com'
+    linkedin: 'https://www.linkedin.com',
   },
   {
     image: '/femaleUser.svg',
@@ -328,7 +358,7 @@ export const  teamMembers = [
     jobTitle: 'Senior Developer',
     facebook: 'https://www.facebook.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com'
+    linkedin: 'https://www.linkedin.com',
   },
   {
     image: '/UserMale.svg',
@@ -336,7 +366,7 @@ export const  teamMembers = [
     jobTitle: 'Head of Technology',
     facebook: 'https://www.facebook.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com'
+    linkedin: 'https://www.linkedin.com',
   },
   {
     image: '/femaleUser.svg',
@@ -344,7 +374,7 @@ export const  teamMembers = [
     jobTitle: 'Art Director',
     facebook: 'https://www.facebook.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com'
+    linkedin: 'https://www.linkedin.com',
   },
   {
     image: '/UserMale.svg',
@@ -352,7 +382,7 @@ export const  teamMembers = [
     jobTitle: 'General Manager',
     facebook: 'https://www.facebook.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com'
+    linkedin: 'https://www.linkedin.com',
   },
   {
     image: '/femaleUser.svg',
@@ -360,6 +390,39 @@ export const  teamMembers = [
     jobTitle: 'Head of Technology',
     facebook: 'https://www.facebook.com',
     twitter: 'https://twitter.com',
-    linkedin: 'https://www.linkedin.com'
-  }
-]
+    linkedin: 'https://www.linkedin.com',
+  },
+];
+
+export const esliderData: any = [
+  {
+    id: 0,
+    image: pinkBuildingJpg.src,
+    text: 'Night in New York.',
+  },
+  {
+    id: 1,
+    image: snowGhosts.src,
+    text: 'Snow Ghosts of Schweitzer.',
+  },
+  {
+    id: 2,
+    image: greyBuilding.src,
+    text: 'Downtown L.A.',
+  },
+  {
+    id: 3,
+    image: echoTower.src,
+    text: 'Tower of communication.',
+  },
+  {
+    id: 4,
+    image: stripes.src,
+    text: 'Stripes to the future.',
+  },
+  {
+    id: 5,
+    image: chairs.src,
+    text: 'Musical Chairs.',
+  },
+];
