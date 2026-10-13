@@ -1,0 +1,89 @@
+"use client";
+import React, { lazy, useEffect, useRef, useState } from 'react';
+import styles from './PageSection.module.scss';
+import Button from '@/components/Button/Button';
+import useResetApploading from '@/lib/redux/hooks/useResetAppLoading';
+import Image from 'next/image';
+
+//@ts-ignore
+const Heading = lazy(() => import('@/components/Heading/Heading.tsx'));
+
+type PageSectionProps = {
+  setThreshold?: number;
+  setMarginOffset?: string;
+  data: {
+    id: number;
+    title: string;
+    component: string;
+    description: string;
+    img: string;
+    page: string;
+  };
+};
+
+function PageSection({
+  data, setThreshold = 0.3, setMarginOffset = '0',
+}: PageSectionProps) {
+  const resetAppLoading = useResetApploading(); // Reset AppLoading
+  const refEl = useRef<HTMLElement>(null);
+  const [isIntersect, setIsIntersecting] = useState(false);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: `${setMarginOffset}px`,
+      threshold: setThreshold,
+    };
+
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsIntersecting(true);
+          obs.disconnect();
+        }
+      });
+    }, options);
+
+    observer.observe(refEl.current!);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  return (
+    <section ref={refEl}>
+      <div className={`${styles.HomeSections} ${styles.LazyLoad} ${isIntersect ? styles.Active : ''}`}>
+        <Heading
+          variant="h2"
+          sx={{
+            textAlign: 'center',
+            margin: '0 0 1rem',
+          }}
+        >
+          {data.title}
+        </Heading>
+        <Heading variant="p">
+          The&nbsp;
+          <b>
+            {data.component}
+            &nbsp;
+            Component&nbsp;
+          </b>
+          {data.description}
+        </Heading>
+        <Button tertiary center sx={{ margin: 'auto auto 35px' }} click={() => resetAppLoading()} href={data.page}>Go To Component</Button>
+        {/* <img className="rounded-lg shadow-xl" loading="lazy" decoding="async" width={2100} src={data.img} alt="Easy Slider Component" /> */}
+        <Image
+          src={data.img}
+          alt={data.title}
+          width={2100}
+          height={700}
+          className="rounded-lg shadow-xl"
+        />
+      </div>
+    </section>
+  );
+}
+
+export default PageSection;

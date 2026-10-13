@@ -1,0 +1,12 @@
+@use '../../assets/scss/variables';
+
+#HoverPodsView {
+  background: variables.$gray-100;
+  padding: 40px 0 75px;
+  border-radius: variables.$borderRadius;
+  position: relative;
+
+  &.Dark {
+    background: variables.$gray-800;
+  }
+}

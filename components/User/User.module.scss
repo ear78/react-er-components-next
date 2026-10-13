@@ -1,0 +1,132 @@
+@use '../../assets/scss/variables';
+
+.UserSkeleton {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  .Image {
+    height: 100px;
+    width: 100px;
+    margin: .5rem 0;
+    background-color: var(--gray-200);
+    border-radius: 50%;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      background: var(--gray-500);
+      content: '';
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      filter: blur(0px);
+      top: 0;
+      left: 0;
+      background-size: 100%;
+      animation: pulse 1.25s ease-in-out infinite;
+    }
+
+    @include variables.breakpoint(md) {
+      height: 175px;
+      width: 175px;
+
+      &::before {
+        width: 175px;
+        height: 175px;
+      }
+    }
+
+  }
+
+  .Name {
+    width: 50%;
+    height: 2rem;
+  }
+
+  .Username {
+    width: 35%;
+    height: 2rem;
+  }
+
+  .Description {
+    height: 5rem;
+  }
+
+  .Name,
+  .Username,
+  .Description {
+    position: relative;
+    background: var(--gray-200);
+    border-radius: 8px;
+
+    &::before {
+      position: absolute;
+      background: var(--gray-500);
+      content: '';
+      border-radius: 8px;
+      height: 100%;
+      width: 100%;
+      filter: blur(0px);
+      top: 0;
+      left: 0;
+      background-size: 100%;
+      animation: pulse 1.25s ease-in-out infinite;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: .05;
+    }
+
+    50% {
+      opacity: .3;
+    }
+
+    100% {
+      opacity: .05;
+    }
+  }
+}
+
+.User {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-bottom: 1rem;
+
+  img {
+    margin: .5rem 0;
+    min-height: 100px;
+    max-width: 100px;
+    filter: grayscale(0.5);
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    @include variables.breakpoint(md) {
+      min-height: 100px;
+      max-width: 175px;
+    }
+  }
+
+  .Username {
+    margin: 0;
+    color: var(--gray);
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+}
+
+.UserTransition {
+  content-visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  transition: all 1s ease-out;
+
+  &.FadeIn {
+    content-visibility: visible;
+    opacity: 1;
+    transition: all 1s ease-in;
+  }
+}

@@ -1,0 +1,18 @@
+@use '../../assets/scss/variables';
+
+.AlertBanner {
+  color: variables.$error;
+  background: color-mix(in oklab, variables.$error 50%, white);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--error) 30%, white 70%);
+
+  .Error {
+    color: variables.$error;
+  }
+
+  &.Dark {
+    background: var(--black);
+    border: 1px solid var(--black);
+  }
+}
