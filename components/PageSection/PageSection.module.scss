@@ -1,9 +1,9 @@
-@import "../../assets/scss/_variables.scss";
+@use "../../assets/scss/_variables.scss";
 
 .HomeSections {
   margin: 3.5rem 0 0;
 
-  @include breakpoint(lg){
+  @include variables.breakpoint(lg){
     margin: 6rem 0 0;
   }
 

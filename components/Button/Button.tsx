@@ -29,7 +29,7 @@ function Button({
       type="button"
       onClick={click}
       style={{ ...sx }}
-      className={`${styles.Button} ${centeredClass} ${primaryClass} ${secondaryClass} ${tertiaryClass}`}
+      className={`${styles.Button} ${centeredClass} ${primaryClass} ${secondaryClass} ${tertiaryClass} w-fit`}
     >
       <a href={href} target={isTarget} rel="noreferrer">
         {children}

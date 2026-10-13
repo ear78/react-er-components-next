@@ -1,13 +1,13 @@
-@import '../../assets/scss/variables';
+@use '../../assets/scss/variables';
 
 .DropperParent {
 
   .DropperWrapper {
-    border: $border;
+    border: variables.$border;
     border-radius: 5px;
     padding: 15px;
 
-    @include breakpoint(md) {
+    @include variables.breakpoint(md) {
       padding: 25px;
     }
 
@@ -21,7 +21,7 @@
       margin: 0 0 1rem;
       border-radius: 3px;
 
-      @include breakpoint(sm) {
+      @include variables.breakpoint(sm) {
         margin: 0;
       }
     }
@@ -29,7 +29,7 @@
     .Right {
       padding: 0;
 
-      @include breakpoint(sm) {
+      @include variables.breakpoint(sm) {
         padding: 0 0 0 1rem
       }
     }

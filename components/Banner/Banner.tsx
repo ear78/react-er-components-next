@@ -1,10 +1,8 @@
-"use client";
+'use client';
 import { lazy, useState } from 'react';
 import styles from './Banner.module.scss';
 import Button from '@/components/Button/Button';
-
-//@ts-ignore
-const Heading = lazy(() => import('@/components/Heading/Heading.tsx'));
+import Heading from '@/components/Heading/Heading';
 
 /**
  * Banner prop types
@@ -113,14 +111,16 @@ function Banner({
       <div
         className={`${styles.Overlay} ${bannerOverlayFull} ${bannerOverlayDark} ${bannerOverlay}`}
       >
-        <p className={`${styles.PreTitle} ${bannerTextColor} font-avenir`}>
+        <p
+          className={`${styles.PreTitle} ${bannerTextColor} font-avenir transition`}
+        >
           {bannerPreTitle}
         </p>
         <Heading variant="h1">{bannerTitle}</Heading>
         <p className={`${styles.SubTitle} ${bannerTextColor}`}>
           {bannerSubTitle}
         </p>
-        {showBtn ? (
+        {showBtn && (
           <Button
             href={ctaUrl}
             target={target}
@@ -129,7 +129,7 @@ function Banner({
           >
             {bannerBtnText}
           </Button>
-        ) : null}
+        )}
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-@import '../../assets/scss/_variables.scss';
+@use '../../assets/scss/_variables.scss';
 
 .Dropper {
   // background: $white;
@@ -26,7 +26,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border: 1px solid $gray-200;
+  border: 1px solid variables.$gray-200;
   border-radius: 3px;
   box-shadow: 0 4px 8px rgba(0,0,0,.05);
   transition: all 0.2s ease;

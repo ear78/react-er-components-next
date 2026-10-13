@@ -5,10 +5,10 @@ import PageTitle from '@/components/PageTitle/PageTitle';
 import styles from './HoverPodsView.module.scss';
 import { podData, forms } from '@/assets/js/data';
 import usePageSettings from '@/lib/redux/hooks/usePageSettings';
-
+import HoverPods from '@/components/HoverPods/HoverPods';
 // Lazy Loaded Components
 // @ts-ignore
-const HoverPods = lazy(() => import('@/components/HoverPods/HoverPods.tsx'));
+// const HoverPods = lazy(() => import('@/components/HoverPods/HoverPods.tsx'));
 
 function HoverPodsView() {
   const { isDarkMode } = useSelector((state: any) => state.app);

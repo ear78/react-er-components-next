@@ -1,0 +1,31 @@
+@use '../../assets/scss/variables';
+
+.Dashboard {
+  .User {
+    margin-bottom: 1rem;
+
+    img {
+      max-width: 100px;
+      filter: grayscale(0.5);
+      background: var(--gray-200);
+      border-radius: 50%;
+      padding: 15px;
+      box-sizing: border-box;
+
+      @include variables.breakpoint(md) {
+        max-width: 175px;
+      }
+    }
+
+    .Name {
+      margin-bottom: 5px;
+    }
+
+    .Username {
+      margin: 0;
+      color: var(--gray-500);
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+  }
+}

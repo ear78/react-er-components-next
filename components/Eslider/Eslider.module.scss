@@ -1,4 +1,4 @@
-@import '../../assets/scss/variables';
+@use '../../assets/scss/variables';
 
 .Eslider {
   display: flex;
@@ -19,7 +19,7 @@
     align-items: flex-end;
     scroll-snap-align: center;
     scroll-snap-stop: always;
-    @include transitions();
+    @include variables.transitions();
   
     &.isBlurred {
       animation: blurred;
@@ -27,11 +27,11 @@
       animation-iteration-count: 1;
     }
 
-    @include breakpoint(sm) {
+    @include variables.breakpoint(sm) {
       scroll-snap-align: start;
     }
 
-    @include breakpoint(lg) {
+    @include variables.breakpoint(lg) {
       min-width: 350px;
       min-height: 350px;
     }
@@ -99,13 +99,13 @@
     justify-content: center;
     align-items: center;
     background: #efefef;
-    @include transitions();
+    @include variables.transitions();
 
     @media (hover: hover) {
       &:hover:not(:disabled) {
         cursor: pointer;
         background: color-mix(in srgb, #efefef 60%, #ffffff 40%);
-        border: 2px solid $primary;
+        border: 2px solid variables.$primary;
         transform: scale(1.125);
       }
     }

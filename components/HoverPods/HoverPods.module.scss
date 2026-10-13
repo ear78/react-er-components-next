@@ -1,4 +1,4 @@
-@import '../../assets/scss/_variables.scss';
+@use '../../assets/scss/_variables.scss';
 
 .HoverPodsContainer {
   display: flex;
@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
 
-  @include breakpoint(md) {
+  @include variables.breakpoint(md) {
     flex-direction: row;
   }
 
@@ -56,7 +56,7 @@
 
   .HoverText {
     margin: 0;
-    color: $white;
+    color: variables.$white;
     position: absolute;
     top: 45%;
     width: 100%;

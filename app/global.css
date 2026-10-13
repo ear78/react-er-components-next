@@ -1,8 +1,12 @@
 @import 'tailwindcss';
+
 @theme {
-  --font-avenir: Avenir, Helvetica, Arial, sans-serif;
+  --font-avenir: Avenir next, Helvetica, Arial, sans-serif;
   --default-font-family: var(--font-avenir);
+  --page-title-tracking: 13px;
 }
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   /* Color Palette */
@@ -16,10 +20,10 @@
   --gray-800: #1b1b1b;
   --gray-900: #121212;
 
-  --pink-900: #f73a7b;
+  --pink-600: #e60076;
 
   --primary-color: var(--gray-700);
-  --secondary-color: var(--pink-900);
+  --secondary-color: var(--pink-600);
   --tertiary-color: var(--black);
 
   --dark-background-color: #121212;

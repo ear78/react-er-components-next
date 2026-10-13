@@ -1,14 +1,11 @@
 "use client";
-import { lazy } from 'react';
 import { useSelector } from 'react-redux';
 import {faAngleDown} from '@fortawesome/free-solid-svg-icons';
 import PageTitle from '@/components/PageTitle/PageTitle';
 import styles from './DropperView.module.scss';
 import { dropperData } from '@/assets/js/data';
 import colors from '@/assets/js/colors';
-
-//@ts-ignore
-const Dropper = lazy(() => import('@/components/Dropper/Dropper.tsx'));
+import Dropper from '@/components/Dropper/Dropper';
 
 export default function DropperView() {
   const { isDarkMode } = useSelector((state: any) => state.app);

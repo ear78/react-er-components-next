@@ -5,7 +5,6 @@ import {
   faSquareLinkedin,
   faTwitterSquare,
 } from '@fortawesome/free-brands-svg-icons';
-import styles from '@/components/SocialComp.module.scss';
 import SocialIcon from '@/components/SocialIcon';
 
 export default function SocialComp() {
@@ -35,9 +34,21 @@ export default function SocialComp() {
   const socialIcon = socialItems.map((item) => {
     return (
       <SocialIcon key={item.platform} path={item.path} target={true}>
-        <FontAwesomeIcon size="xs" widthAuto icon={item.icon} />
+        <FontAwesomeIcon
+          size="xs"
+          widthAuto
+          className="w-6.5"
+          icon={item.icon}
+        />
       </SocialIcon>
     );
   });
-  return <div className={styles.SocialComp}>{socialIcon}</div>;
+  return (
+    <div
+      className={`flex items-center gap-1 transition duration-150 ease-out justify-around group`}
+    >
+      {socialIcon}
+    </div>
+  );
 }
+

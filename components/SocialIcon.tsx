@@ -1,18 +1,19 @@
-import styles from './SocialIcon.module.scss'
+import styles from './SocialIcon.module.scss';
 
 type SocialIconProps = {
   path: string;
   target?: boolean;
-  isDarkMode?: boolean;
   children: React.ReactNode;
 };
 
 function SocialIcon({
-  path, target = false, isDarkMode, children,
+  path,
+  target = false,
+  children,
 }: SocialIconProps) {
   return (
     <a
-      className={`${styles.Links} ${isDarkMode ? styles.Dark : ''}`}
+      className={`${styles.Links} flex text-neutral-800 group-hover:text-neutral-500 hover:text-black dark:hover:text-pink-500`}
       href={path}
       target={target ? '_blank' : ''}
       rel="noreferrer"

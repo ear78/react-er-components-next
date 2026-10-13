@@ -1,13 +1,10 @@
-"use client";
+'use client';
 import { lazy, Suspense } from 'react';
 import { useSelector } from 'react-redux';
 import PageTitle from '@/components/PageTitle/PageTitle';
 import styles from './Home.module.scss';
 import { homeData, pageSectionData } from '../../assets/js/data';
-
-// Lazy load components
-// @ts-ignore
-const PageSection = lazy(() => import('@/components/PageSection/PageSection.tsx'));
+import PageSection from '@/components/PageSection/PageSection';
 
 function Home() {
   const { isDarkMode } = useSelector((state: any) => state.app);
@@ -17,7 +14,9 @@ function Home() {
 
   return (
     <>
-      <section className={`flex flex-col-reverse md:flex-row gap-4 ${styles.HomeContainer} ${isDarkMode ? styles.Dark : ''}`}>
+      <section
+        className={`flex flex-col-reverse md:flex-row gap-4 ${styles.HomeContainer} ${isDarkMode ? styles.Dark : ''}`}
+      >
         <div className={`${styles.Left} w-full lg:w-1/2`}>
           <span>Welcome to ER Components! </span>
           {homeData.desc}
@@ -26,12 +25,10 @@ function Home() {
         </div>
         <div className={`${styles.Right} w-full lg:w-1/2`}>
           <div className={styles.HomeTitle}>ER</div>
-          <PageTitle title="Components" isDarkMode={isDarkMode} />
+          <PageTitle title="Components" />
         </div>
       </section>
-      <Suspense fallback="<div>Loading...</div>">
-        {pageSection}
-      </Suspense>
+      <Suspense fallback="<div>Loading...</div>">{pageSection}</Suspense>
     </>
   );
 }

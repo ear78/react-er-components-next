@@ -130,37 +130,71 @@ export const podData = [
   },
 ];
 
-// export const happyData = [ {
-//     id: 'test',
-//     text: 'Market Place',
-//     lineColor: '#fff',
-//     dotColor: ''
-//   },
-//   {
-//     id: 'test1',
-//     text: 'Kochava Collective',
-//     lineColor: '#fff',
-//     dotColor: ''
-//   },
-//   {
-//     id: 'test2',
-//     text: 'Attribution',
-//     lineColor: '#fff',
-//     dotColor: ''
-//   },
-//   {
-//     id: 'test3',
-//     text: 'SmartLink',
-//     lineColor: '#fff',
-//     dotColor: ''
-//   },
-//   {
-//     id: 'test4',
-//     text: 'User Experience',
-//     lineColor: '#fff',
-//     dotColor: ''
-//   }
-// ]
+export const happyData = [
+  {
+    id: 'test',
+    text: 'Market Place',
+    lineColor: '#fff',
+    dotColor: '',
+  },
+  {
+    id: 'test1',
+    text: 'Kochava Collective',
+    lineColor: '#fff',
+    dotColor: '',
+  },
+  {
+    id: 'test2',
+    text: 'Attribution',
+    lineColor: '#fff',
+    dotColor: '',
+  },
+  {
+    id: 'test3',
+    text: 'SmartLink',
+    lineColor: '#fff',
+    dotColor: '',
+  },
+  {
+    id: 'test4',
+    text: 'User Experience',
+    lineColor: '#fff',
+    dotColor: '',
+  },
+];
+
+export const sectionData = [
+  {
+    id: 0,
+    img: chairs.src,
+    title: 'Hello World',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta non pulvinar neque laoreet suspendisse. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Senectus et netus et malesuada fames ac turpis.',
+  },
+  {
+    id: 1,
+    img: echoTower.src,
+    title: 'Hello World',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta non pulvinar neque laoreet suspendisse. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Senectus et netus et malesuada fames ac turpis.',
+  },
+  {
+    id: 2,
+    img: stairway.src,
+    title: 'Hello World',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta non pulvinar neque laoreet suspendisse. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Senectus et netus et malesuada fames ac turpis.',
+  },
+  {
+    id: 3,
+    img: stripes.src,
+    title: 'Hello World',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta non pulvinar neque laoreet suspendisse. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Senectus et netus et malesuada fames ac turpis.',
+  },
+  {
+    id: 4,
+    img: jail.src,
+    title: 'Hello World',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta non pulvinar neque laoreet suspendisse. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Senectus et netus et malesuada fames ac turpis.',
+  },
+];
 
 // export const podData = [
 //   { podBgImage: echoTowerSml,
@@ -311,9 +345,93 @@ export const forms = [
   ],
 ];
 
+// export const teamMembers = [
+//   {
+//     image: '/UserMale.svg',
+//     name: 'Jack Reacher',
+//     jobTitle: 'Professional Hitman',
+//     facebook: 'https://www.facebook.com',
+//     twitter: 'https://twitter.com',
+//     linkedin: 'https://www.linkedin.com',
+//   },
+//   {
+//     image: '/femaleUser.svg',
+//     name: 'David Mattias',
+//     jobTitle: 'General Manager',
+//     facebook: 'https://www.facebook.com',
+//     twitter: 'https://twitter.com',
+//     linkedin: 'https://www.linkedin.com',
+//   },
+//   {
+//     image: '/UserMale.svg',
+//     name: 'Elias Leonard',
+//     jobTitle: 'Head of Technology',
+//     facebook: 'https://www.facebook.com',
+//     twitter: 'https://twitter.com',
+//     linkedin: 'https://www.linkedin.com',
+//   },
+//   {
+//     image: '/femaleUser.svg',
+//     name: 'Megan Kimberly',
+//     jobTitle: 'Art Director',
+//     facebook: 'https://www.facebook.com',
+//     twitter: 'https://twitter.com',
+//     linkedin: 'https://www.linkedin.com',
+//   },
+//   {
+//     image: '/UserMale.svg',
+//     name: 'Johnny Reb',
+//     jobTitle: 'Computerist',
+//     facebook: 'https://www.facebook.com',
+//     twitter: 'https://twitter.com',
+//     linkedin: 'https://www.linkedin.com',
+//   },
+//   {
+//     image: '/femaleUser.svg',
+//     name: 'Paran John',
+//     jobTitle: 'Senior Developer',
+//     facebook: 'https://www.facebook.com',
+//     twitter: 'https://twitter.com',
+//     linkedin: 'https://www.linkedin.com',
+//   },
+//   {
+//     image: '/UserMale.svg',
+//     name: 'Elias Leonard',
+//     jobTitle: 'Head of Technology',
+//     facebook: 'https://www.facebook.com',
+//     twitter: 'https://twitter.com',
+//     linkedin: 'https://www.linkedin.com',
+//   },
+//   {
+//     image: '/femaleUser.svg',
+//     name: 'Megan Kimberly',
+//     jobTitle: 'Art Director',
+//     facebook: 'https://www.facebook.com',
+//     twitter: 'https://twitter.com',
+//     linkedin: 'https://www.linkedin.com',
+//   },
+//   {
+//     image: '/UserMale.svg',
+//     name: 'David Mattias',
+//     jobTitle: 'General Manager',
+//     facebook: 'https://www.facebook.com',
+//     twitter: 'https://twitter.com',
+//     linkedin: 'https://www.linkedin.com',
+//   },
+//   {
+//     image: '/femaleUser.svg',
+//     name: 'Elias Leonard',
+//     jobTitle: 'Head of Technology',
+//     facebook: 'https://www.facebook.com',
+//     twitter: 'https://twitter.com',
+//     linkedin: 'https://www.linkedin.com',
+//   },
+// ];
+
 export const teamMembers = [
   {
-    image: '/UserMale.svg',
+    id: 0,
+    image: portfolio11.src,
     name: 'Jack Reacher',
     jobTitle: 'Professional Hitman',
     facebook: 'https://www.facebook.com',
@@ -321,7 +439,8 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com',
   },
   {
-    image: '/femaleUser.svg',
+    id: 1,
+    image: portfolio12.src,
     name: 'David Mattias',
     jobTitle: 'General Manager',
     facebook: 'https://www.facebook.com',
@@ -329,7 +448,8 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com',
   },
   {
-    image: '/UserMale.svg',
+    id: 2,
+    image: portfolio11.src,
     name: 'Elias Leonard',
     jobTitle: 'Head of Technology',
     facebook: 'https://www.facebook.com',
@@ -337,7 +457,8 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com',
   },
   {
-    image: '/femaleUser.svg',
+    id: 3,
+    image: portfolio12.src,
     name: 'Megan Kimberly',
     jobTitle: 'Art Director',
     facebook: 'https://www.facebook.com',
@@ -345,7 +466,8 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com',
   },
   {
-    image: '/UserMale.svg',
+    id: 4,
+    image: portfolio11.src,
     name: 'Johnny Reb',
     jobTitle: 'Computerist',
     facebook: 'https://www.facebook.com',
@@ -353,7 +475,8 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com',
   },
   {
-    image: '/femaleUser.svg',
+    id: 5,
+    image: portfolio12.src,
     name: 'Paran John',
     jobTitle: 'Senior Developer',
     facebook: 'https://www.facebook.com',
@@ -361,7 +484,8 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com',
   },
   {
-    image: '/UserMale.svg',
+    id: 6,
+    image: portfolio11.src,
     name: 'Elias Leonard',
     jobTitle: 'Head of Technology',
     facebook: 'https://www.facebook.com',
@@ -369,7 +493,8 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com',
   },
   {
-    image: '/femaleUser.svg',
+    id: 7,
+    image: portfolio12.src,
     name: 'Megan Kimberly',
     jobTitle: 'Art Director',
     facebook: 'https://www.facebook.com',
@@ -377,7 +502,8 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com',
   },
   {
-    image: '/UserMale.svg',
+    id: 8,
+    image: portfolio11.src,
     name: 'David Mattias',
     jobTitle: 'General Manager',
     facebook: 'https://www.facebook.com',
@@ -385,9 +511,28 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com',
   },
   {
-    image: '/femaleUser.svg',
+    id: 9,
+    image: portfolio12.src,
     name: 'Elias Leonard',
     jobTitle: 'Head of Technology',
+    facebook: 'https://www.facebook.com',
+    twitter: 'https://twitter.com',
+    linkedin: 'https://www.linkedin.com',
+  },
+  {
+    id: 10,
+    image: portfolio11.src,
+    name: 'David Mattias',
+    jobTitle: 'General Manager',
+    facebook: 'https://www.facebook.com',
+    twitter: 'https://twitter.com',
+    linkedin: 'https://www.linkedin.com',
+  },
+  {
+    id: 11,
+    image: portfolio12.src,
+    name: 'Paran John',
+    jobTitle: 'Senior Developer',
     facebook: 'https://www.facebook.com',
     twitter: 'https://twitter.com',
     linkedin: 'https://www.linkedin.com',

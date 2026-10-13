@@ -20,7 +20,6 @@ function usePageSettings(viewFormData: any, pageSetting: number) {
     };
     return formObj;
   });
-  // console.log(mergedFormData, viewFormData);
 
   useEffect(() => {
     setFormData(mergedFormData);

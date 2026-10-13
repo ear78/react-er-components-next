@@ -1,20 +1,19 @@
-import React from 'react';
-import styles from './PageTitle.module.scss';
-
-type PageTitleProps = {
+interface PageTitleProps {
   alt?: boolean;
   color?: string;
   title: string;
-  isDarkMode?: boolean;
-};
+}
 
-function PageTitle({
-  alt, color, title, isDarkMode,
-}: PageTitleProps) {
-  const alternateStyle = alt ? styles.Alt : '';
+function PageTitle({ alt, color, title }: PageTitleProps) {
+  const alternateStyle: string | null = alt
+    ? 'bg-neutral-800 text-white p-5 shadow-lg'
+    : null;
 
   return (
-    <h1 style={{ color }} className={`${styles.PageTitle} ${alternateStyle} ${isDarkMode ? styles.Dark : ''}`}>
+    <h1
+      style={{ color }}
+      className={`text-center rounded-lg font-normal text-md uppercase tracking-(--page-title-tracking) ${alternateStyle} dark:text-pink-600`}
+    >
       &lt;
       {title}
       /&gt;
