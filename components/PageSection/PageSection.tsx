@@ -63,7 +63,7 @@ function PageSection({
         >
           {data.title}
         </Heading>
-        <Heading variant="p">
+        <p>
           The&nbsp;
           <b>
             {data.component}
@@ -71,7 +71,7 @@ function PageSection({
             Component&nbsp;
           </b>
           {data.description}
-        </Heading>
+        </p>
         <Button tertiary center sx={{ margin: 'auto auto 35px' }} click={() => resetAppLoading()} href={data.page}>Go To Component</Button>
         {/* <img className="rounded-lg shadow-xl" loading="lazy" decoding="async" width={2100} src={data.img} alt="Easy Slider Component" /> */}
         <Image

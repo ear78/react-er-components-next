@@ -4,7 +4,7 @@
 
   .HappyDotsContainer {
     padding: 15px;
-    @include variables.border;
+    // @include variables.border;
     border-radius: 3px;
     position: relative;
   }
@@ -52,16 +52,16 @@
       width: initial;
     }
 
-    .TextBox {
-      width: initial;
-      padding: 35px;
-      box-sizing: border-box;
-      background: variables.$gray-100;
+    // .TextBox {
+    //   width: initial;
+    //   padding: 35px;
+    //   box-sizing: border-box;
+    //   background: variables.$gray-100;
 
-      &.Dark {
-        background: var(--gray-800);
-      }
-    }
+    //   &.Dark {
+    //     background: var(--gray-800);
+    //   }
+    // }
   }
 
   @media screen and (min-width: 768px) {
