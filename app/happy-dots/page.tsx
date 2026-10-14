@@ -1,6 +1,5 @@
 'use client';
 import { useRef } from 'react';
-import styles from './HappyDotsView.module.scss';
 import PageTitle from '@/components/PageTitle/PageTitle';
 import Spacer from '@/components/Spacer/Spacer';
 import { happyData, sectionData, forms } from '@/assets/js/data';
@@ -22,11 +21,11 @@ export default function HappyDotsView() {
   ));
 
   return (
-    <div className={styles.HappyDotsParent}>
+    <div className="">
       <PageTitle title="HappyDots" />
       <Spacer height={50} />
 
-      <div className={styles.HappyDotsContainer}>
+      <div className="">
         <Dots
           refs={elementRefs}
           data={happyData}

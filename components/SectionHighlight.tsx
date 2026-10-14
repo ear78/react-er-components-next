@@ -29,15 +29,19 @@ export default function SectionHighlight({
   elementRef,
   stacked,
 }: SectionHighlightProps) {
-  const alternatingSides = index % 2 !== 0 ? 'flex-row-reverse' : 'flex-row';
-  const imageRadiused = index % 2 !== 0 ? 'rounded-r-lg' : 'rounded-l-lg';
-  const boxRadiused = index % 2 == 0 ? 'rounded-r-lg' : 'rounded-l-lg';
+  const alternatingSides =
+    index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row';
+  const imageRadiused =
+    index % 2 !== 0
+      ? 'rounded-t-lg md:rounded-t-none md:rounded-r-lg'
+      : 'rounded-t-lg md:rounded-t-none md:rounded-l-lg';
+  const boxRadiused = index % 2 == 0 ? 'md:rounded-r-lg' : 'md:rounded-l-lg';
   const isStacked = stacked ? 'mb-0' : 'mb-14 shadow-2xl rounded-lg';
   return (
     <section
       key={data.id}
       ref={elementRef}
-      className={`flex ${alternatingSides} ${isStacked}`}
+      className={`flex flex-col ${alternatingSides} ${isStacked}`}
     >
       <div className="w-full md:w-1/2">
         <Image
