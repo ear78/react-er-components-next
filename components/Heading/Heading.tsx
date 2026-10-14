@@ -3,7 +3,7 @@ import styles from '@/components/Heading/Heading.module.scss';
 
 type TypographyProps = {
   sx?: object;
-  variant: string;
+  variant?: string;
   children: React.ReactNode;
 };
 
@@ -31,7 +31,7 @@ function Typography({
       element = <h6 style={sx} className={styles.Typography}>{children}</h6>;
       break;
     default:
-      element = <p style={sx} className={styles.Typography}>{children}</p>;
+      element = <h3 style={sx} className={styles.Typography}>{children}</h3>;
   }
 
   return element;

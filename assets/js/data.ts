@@ -139,7 +139,7 @@ export const happyData = [
   },
   {
     id: 'test1',
-    text: 'Kochava Collective',
+    text: 'Collective',
     lineColor: '#fff',
     dotColor: '',
   },
@@ -167,32 +167,57 @@ export const sectionData = [
   {
     id: 0,
     img: chairs.src,
-    title: 'Hello World',
+    title: { text: 'Hello World' },
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta non pulvinar neque laoreet suspendisse. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Senectus et netus et malesuada fames ac turpis.',
+    button: {
+      text: 'Get in touch',
+      href: 'https://www.elliotrichardson.com',
+      target: true,
+    },
   },
   {
     id: 1,
     img: echoTower.src,
-    title: 'Hello World',
+    title: { text: 'Hello World' },
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta non pulvinar neque laoreet suspendisse. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Senectus et netus et malesuada fames ac turpis.',
+    button: {
+      text: 'Get in touch',
+      href: 'https://www.elliotrichardson.com',
+      target: true,
+    },
   },
   {
     id: 2,
     img: stairway.src,
-    title: 'Hello World',
+    title: { text: 'Hello World' },
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta non pulvinar neque laoreet suspendisse. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Senectus et netus et malesuada fames ac turpis.',
+    button: {
+      text: 'Get in touch',
+      href: 'https://www.elliotrichardson.com',
+      target: true,
+    },
   },
   {
     id: 3,
     img: stripes.src,
-    title: 'Hello World',
+    title: { text: 'Hello World' },
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta non pulvinar neque laoreet suspendisse. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Senectus et netus et malesuada fames ac turpis.',
+    button: {
+      text: 'Get in touch',
+      href: 'https://www.elliotrichardson.com',
+      target: true,
+    },
   },
   {
     id: 4,
     img: jail.src,
-    title: 'Hello World',
+    title: { text: 'Hello World' },
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta non pulvinar neque laoreet suspendisse. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Senectus et netus et malesuada fames ac turpis.',
+    button: {
+      text: 'Get in touch',
+      href: 'https://www.elliotrichardson.com',
+      target: true,
+    },
   },
 ];
 
