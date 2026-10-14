@@ -31,12 +31,25 @@ export default function SectionHighlight({
 }: SectionHighlightProps) {
   const alternatingSides =
     index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row';
-  const imageRadiused =
-    index % 2 !== 0
+
+  const isStacked = stacked ? 'mb-0' : 'mb-14 shadow-2xl rounded-lg';
+
+  const boxRadiused = () => {
+    if (stacked) {
+      return '';
+    }
+    return index % 2 == 0 ? 'md:rounded-r-lg' : 'md:rounded-l-lg';
+  };
+
+  const imageRadiused = () => {
+    if (stacked) {
+      return '';
+    }
+    return index % 2 !== 0
       ? 'rounded-t-lg md:rounded-t-none md:rounded-r-lg'
       : 'rounded-t-lg md:rounded-t-none md:rounded-l-lg';
-  const boxRadiused = index % 2 == 0 ? 'md:rounded-r-lg' : 'md:rounded-l-lg';
-  const isStacked = stacked ? 'mb-0' : 'mb-14 shadow-2xl rounded-lg';
+  };
+
   return (
     <section
       key={data.id}
@@ -45,7 +58,7 @@ export default function SectionHighlight({
     >
       <div className="w-full md:w-1/2">
         <Image
-          className={`object-cover aspect-3/2 md:aspect-square lg:aspect-3/2 ${imageRadiused}`}
+          className={`object-cover aspect-3/2 md:aspect-square lg:aspect-3/2 ${imageRadiused()}`}
           loading={`${index <= 1 ? 'eager' : 'lazy'}`}
           src={data.img}
           alt={data?.title?.text ?? ''}
@@ -54,7 +67,7 @@ export default function SectionHighlight({
         />
       </div>
       <div
-        className={`flex flex-col justify-center w-full md:w-1/2 space-y-3 p-9 bg-neutral-100 dark:bg-neutral-900 transition duration-500 ease-in-out ${boxRadiused}`}
+        className={`flex flex-col justify-center w-full md:w-1/2 space-y-3 p-9 bg-neutral-100 dark:bg-neutral-900 transition duration-500 ease-in-out ${boxRadiused()}`}
       >
         {data?.title?.text && (
           <Heading variant={data?.title?.variant}>{data?.title?.text}</Heading>
