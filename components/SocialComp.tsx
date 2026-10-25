@@ -33,7 +33,12 @@ export default function SocialComp() {
 
   const socialIcon = socialItems.map((item) => {
     return (
-      <SocialIcon key={item.platform} path={item.path} target={true}>
+      <SocialIcon
+        key={item.platform}
+        path={item.path}
+        platform={item.platform}
+        target={true}
+      >
         <FontAwesomeIcon
           size="xs"
           widthAuto
@@ -51,4 +56,3 @@ export default function SocialComp() {
     </div>
   );
 }
-

@@ -3,12 +3,14 @@ import styles from './SocialIcon.module.scss';
 type SocialIconProps = {
   path: string;
   target?: boolean;
+  platform?: string;
   children: React.ReactNode;
 };
 
 function SocialIcon({
   path,
   target = false,
+  platform,
   children,
 }: SocialIconProps) {
   return (
@@ -17,6 +19,7 @@ function SocialIcon({
       href={path}
       target={target ? '_blank' : ''}
       rel="noreferrer"
+      aria-label={`Link to ${platform}`}
     >
       {children}
     </a>
