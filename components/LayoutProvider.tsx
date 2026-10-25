@@ -8,6 +8,8 @@ import ComponentSettings from '@/components/ComponentSettings/ComponentSettings'
 import { formData as componentFormData } from '@/assets/js/formData';
 import Nav from './Nav/Nav';
 import Footer from './Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGrip } from '@fortawesome/free-solid-svg-icons';
 
 /**
  * Higher order component that allows for our redux state management to work with our layout in next.js.
@@ -43,11 +45,9 @@ export default function LayoutProvider({
             }
             aria-expanded={isDrawerOpen}
             onClick={() => dispatch(setIsDrawerOpen(!isDrawerOpen))}
-            className="top-27 z-10 flex ml-auto -mt-10 mb-2 items-center gap-2 rounded-full bg-black px-4 py-2 text-white cursor-pointer shadow-lg transition duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:bg-neutral-800"
+            className="top-27 z-10 flex -mt-10 mb-2 items-center gap-2 rounded-full bg-black px-4 py-2 text-white cursor-pointer shadow-lg transition duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:bg-neutral-800"
           >
-            <span className="whitespace-nowrap text-sm font-medium">
-              Settings
-            </span>
+            <FontAwesomeIcon icon={faGrip} />
           </button>
         )}
         {children}
@@ -57,7 +57,7 @@ export default function LayoutProvider({
       <Drawer
         isOpen={isDrawerOpen}
         onClose={() => dispatch(setIsDrawerOpen(false))}
-        placement="right"
+        placement="left"
       >
         <ComponentSettings formData={drawerFormData} />
       </Drawer>
