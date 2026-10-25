@@ -40,13 +40,13 @@ function TeamCard({
                 alt={member.name}
               />
               <div className={styles.icons}>
-                <a href={member.facebook}>
+                <a href={member.facebook} aria-label="Link to Facebook">
                   <FontAwesomeIcon icon={faFacebookSquare} />
                 </a>
-                <a href={member.twitter}>
+                <a href={member.twitter} aria-label="Link to Twitter">
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
-                <a href={member.linkedin}>
+                <a href={member.linkedin} aria-label="Link to LinkedIn">
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </div>
@@ -79,13 +79,19 @@ function TeamCard({
           <img className={styles.CompanyLogo} src={logo.src} alt="Logo" />
           <div className={styles.icons}>
             <a href={member.facebook}>
-              <FontAwesomeIcon icon={faFacebookSquare} />
+              <FontAwesomeIcon
+                icon={faFacebookSquare}
+                aria-label="Link to Facebook"
+              />
             </a>
             <a href={member.twitter}>
-              <FontAwesomeIcon icon={faTwitter} />
+              <FontAwesomeIcon icon={faTwitter} aria-label="Link to Twitter" />
             </a>
             <a href={member.linkedin}>
-              <FontAwesomeIcon icon={faLinkedinIn} />
+              <FontAwesomeIcon
+                icon={faLinkedinIn}
+                aria-label="Link to LinkedIn"
+              />
             </a>
           </div>
         </div>
