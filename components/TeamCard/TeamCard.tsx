@@ -40,21 +40,21 @@ function TeamCard({
                 alt={member.name}
               />
               <div className={styles.icons}>
-                <a href={member.facebook}>
+                <a href={member.facebook} aria-label="Link to Facebook">
                   <FontAwesomeIcon icon={faFacebookSquare} />
                 </a>
-                <a href={member.twitter}>
+                <a href={member.twitter} aria-label="Link to Twitter">
                   <FontAwesomeIcon icon={faTwitter} />
                 </a>
-                <a href={member.linkedin}>
+                <a href={member.linkedin} aria-label="Link to LinkedIn">
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </div>
             </div>
             <div className={styles.AltLayoutRight}>
-              <h3 className={`${styles.Name} ${isDarkMode ? styles.Dark : ''}`}>
+              <h2 className={`${styles.Name} ${isDarkMode ? styles.Dark : ''}`}>
                 {member.name}
-              </h3>
+              </h2>
               <p className={styles.JobTitle}>{member.jobTitle}</p>
             </div>
             <img className={styles.CompanyLogo} src={logo.src} alt="Logo" />
@@ -72,20 +72,26 @@ function TeamCard({
           className={`${styles.MemberHoverTrigger} ${isDarkMode ? styles.Dark : ''}`}
         >
           <img className={styles.Image} src={member.image} alt={member.name} />
-          <h3 className={`${styles.Name} ${isDarkMode ? styles.Dark : ''}`}>
+          <h2 className={`${styles.Name} ${isDarkMode ? styles.Dark : ''}`}>
             {member.name}
-          </h3>
+          </h2>
           <p className={styles.JobTitle}>{member.jobTitle}</p>
           <img className={styles.CompanyLogo} src={logo.src} alt="Logo" />
-          <div className={styles.icons}>
-            <a href={member.facebook}>
-              <FontAwesomeIcon icon={faFacebookSquare} />
+          <div className={`${styles.icons}`}>
+            <a href={member.facebook} className='pr-1'>
+              <FontAwesomeIcon
+                icon={faFacebookSquare}
+                aria-label="Link to Facebook"
+              />
             </a>
-            <a href={member.twitter}>
-              <FontAwesomeIcon icon={faTwitter} />
+            <a href={member.twitter} className='px-1'>
+              <FontAwesomeIcon icon={faTwitter} aria-label="Link to Twitter" />
             </a>
-            <a href={member.linkedin}>
-              <FontAwesomeIcon icon={faLinkedinIn} />
+            <a href={member.linkedin} className='px-1'>
+              <FontAwesomeIcon
+                icon={faLinkedinIn}
+                aria-label="Link to LinkedIn"
+              />
             </a>
           </div>
         </div>

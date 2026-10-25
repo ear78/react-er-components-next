@@ -68,7 +68,7 @@ function Drawer({
           className="absolute right-2 top-2 grid size-8 place-items-center cursor-pointer rounded-full text-lg transition-colors hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black dark:text-black"
           onClick={onClose}
         >
-          <FontAwesomeIcon icon={faXmark} className="" aria-hidden="true" />
+          <FontAwesomeIcon icon={faXmark} />
         </button>
         {children}
       </aside>

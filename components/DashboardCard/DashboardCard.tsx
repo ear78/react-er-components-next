@@ -35,7 +35,7 @@ export default function DashboardCard({
       className={`${styles.Card} h-auto ${isDarkMode ? styles.Dark : ''}`}
     >
       <p className={styles.Header}>
-        <img src={logo.src} alt='logo' className="w-5" />
+        <img src={logo.src} alt="logo" className="w-5" />
         {component.component}
       </p>
       <p className={styles.Description}>
@@ -61,13 +61,13 @@ export default function DashboardCard({
         {component.component}
         &nbsp; settings
         <button
-          type='button'
+          type="button"
           disabled={!isButtonEnabled(component)}
           aria-label={`Edit settings for ${component.component}`}
           onClick={() => editSettings(component.id)}
           className={`${styles.EditBtn} ${!isButtonEnabled(component) ? 'disabled:opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
         >
-          <FontAwesomeIcon icon={faEdit} fontSize='inherit' /> edit
+          <FontAwesomeIcon icon={faEdit} fontSize="inherit" />
         </button>
       </p>
     </div>
